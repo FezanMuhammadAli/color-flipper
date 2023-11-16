@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #30c5c5;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.side1 {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  color: cyan;
+}
+
+.side2 {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.side2 h2 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.side2 h2:hover {
+  /* text-decoration: none; */
+  transition: text-decoration 1s ease-in-out;
+  color: cyan;
+}
+
+.main-container {
+  margin-top: 15%;
+  width: 100%;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: antiquewhite;
+  font-weight: 500;
+  font-size: larger;
+  transition: -1s;
+}
+
+h1 span {
+  color: blueviolet;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+}
