@@ -3,7 +3,7 @@ const body = document.getElementsByTagName("body")[0];
 const codeColor = document.getElementsByClassName("code")[0];
 const simple = document.getElementById("simple");
 const hex = document.getElementById("hex");
-let chosenCategory = "";
+let chosenCategory;
 
 function choosenCategory(category) {
   chosenCategory = category;
@@ -48,5 +48,7 @@ function handleClick() {
     codeColor.innerHTML = getRandomColor();
     body.style.backgroundColor = getRandomColor();
     console.log(chosenCategory);
+  } else if (!chosenCategory) {
+    alert("kindly choose either Simple or Hex Category!");
   }
 }
